@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/doah">
+
+
+
+    <ImageView
+
+        android:layout_width="213dp"
+        android:layout_height="73dp"
+        android:src="@drawable/lokasi"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="438dp"
+        android:layout_height="218dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundTint="#DFCA0D">
+
+            <ImageView
+                android:id="@+id/btSet"
+                android:layout_width="403dp"
+                android:layout_height="207dp"
+                android:src="@drawable/subuh"
+                />
+
+            <ImageView
+                android:id="@+id/btSett"
+                android:layout_width="372dp"
+                android:layout_height="match_parent"
+                android:onClick="wow"
+                android:src="@drawable/dzuhur"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/btSsett"
+                android:layout_width="422dp"
+                android:layout_height="218dp"
+                android:src="@drawable/azhar"
+                />
+
+            <ImageView
+                android:id="@+id/bbtSett"
+                android:layout_width="420dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/magrib"
+                />
+
+            <ImageView
+                android:id="@+id/bttSett"
+                android:layout_width="445dp"
+                android:layout_height="197dp"
+                android:src="@drawable/isya"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:fontFamily="sans-serif"
+        android:text="@string/batal"
+        android:textStyle="bold"
+        app:iconTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/promptID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#8BC34A"
+        android:onClick="next"
+        android:text="@string/doa_harian"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#FFC107"
+        android:onClick="log"
+        android:text="@string/zikir_harian"
+        android:textStyle="bold"
+
+        app:iconTint="#FF5722" />
+
+</LinearLayout>
